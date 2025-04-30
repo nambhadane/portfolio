@@ -1,0 +1,374 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #111;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.social-icons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.about-header h3 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-content {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Ensures the menu is aligned to the right side of the button */
+    margin-top: 10px; /* Adjust as needed */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-content a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-content a:hover {
+    background: #333;
+}
+
+.menu-content.visible {
+    display: flex;
+}
+
+/* Update the .home-section to use a background image */
+.home-section {
+    height: 100vh;
+    background: url('assets/sunset.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 48px;
+    color: #ff0057;
+    font-weight: 600;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.intro p {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.btn {
+    background: #ff0057;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e6004c;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff0057;
+}
+
+.about-section, .resume-section {
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.about-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    flex-basis: 30%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.progress {
+    flex-basis: 60%;
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px; /* Adjusted height */
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #ff0057;
+    border-radius: 25px 0 0 25px;
+    line-height: 20px;
+    color: #fff;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.progress-bar .percentage {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.profile, .skills {
+    margin-top: 20px;
+}
+.certificates-section {
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.certificates-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.certificates-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.certificate-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.certificate-item a {
+    text-decoration: none;
+    color: #0073b1;
+    font-weight: 600;
+}
+
+.certificate-item a:hover {
+    text-decoration: underline;
+}
+.contact-section {
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.contact-link i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.contact-link:hover i.bi.bi-linkedin {
+    color: #0073b1; /* LinkedIn Blue */
+}
+
+.contact-link:hover i.bi.bi-github {
+    color: #333; /* GitHub Black */
+}
+
+.contact-link:hover i.bi.bi-envelope {
+    color: #d44638; /* Gmail Red */
+}
+
+.projects-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #0073b1;
+    font-weight: 600;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-content {
+        right: 0;
+        width: 100%;
+    }
+
+    .about-content, .projects-list, .resume-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 100%;
+        margin: 10px;
+    }
+}
