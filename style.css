@@ -301,6 +301,11 @@ header {
     color: #d44638; /* Gmail Red */
 }
 
+.contact-link:hover i.bi.bi-instagram {
+    color: #d9348c; /* Gmail Red */
+}
+
+
 .projects-section {
     padding: 60px 20px;
     background: #f9f9f9;
